@@ -1,3 +1,4 @@
+import { ShoppingListService } from '../services/shopping-list/shopping-list.service';
 import { FIREBASE_CONFIG } from './firebase.credentials';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -25,7 +26,8 @@ import { MyApp } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ShoppingListService
   ]
 })
 export class AppModule {}
