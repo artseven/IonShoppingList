@@ -35,4 +35,6 @@ export class AddShoppingItemPage {
       this.navCtrl.setRoot('HomePage', {key: ref.key})
     });
   }
+
+
 }
