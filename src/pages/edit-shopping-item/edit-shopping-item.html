@@ -24,5 +24,11 @@
     <ion-input [(ngModel)]="item.price" type="number" placeholder="700"></ion-input>
   </ion-item>
 
-  <button ion-button block clear (click)="saveItem(item)">Save</button>
+  <button
+   ion-button block
+   clear (click)="saveItem(item)">Save</button>
+  <button
+   ion-button block color="danger"
+   clear (click)="removeItem(item)">Delete</button>
+
 </ion-content>
